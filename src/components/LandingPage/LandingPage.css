@@ -1,0 +1,184 @@
+.container-home {
+  min-height: 100vh;
+  background: rgb(200, 194, 160);
+  background: radial-gradient(
+    circle,
+    rgba(200, 194, 160, 1) 0%,
+    rgba(245, 244, 238, 1) 42%,
+    rgba(254, 254, 253, 1) 68%,
+    rgba(255, 255, 255, 1) 78%
+  );
+  margin-top: -5rem;
+}
+
+.detail-home {
+  margin-top: 100rem;
+}
+.detail-home a {
+  border: 1px solid rgb(180, 171, 124);
+  text-decoration: none;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  color: rgb(180, 171, 124);
+  background-color: white;
+  border-radius: 50rem;
+}
+.detail-home h1 {
+  font-family: "Prata", serif;
+  font-size: 5rem;
+  text-align: left;
+}
+.detail-home .logo-home {
+  margin-left: 40rem;
+}
+.image-girl img {
+  width: 80%;
+}
+.image-girl {
+  align-items: end;
+  display: flex;
+  height: 100vh;
+}
+.teks-left {
+  margin-left: 20rem;
+  z-index: 2000;
+}
+
+.container-product .block img {
+  border-radius: 5px 5px 0 0;
+}
+.container-product .block {
+  background-color: #e0dbbe;
+  border: 10px solid #e0dbbe;
+  min-height: 25rem;
+  border-radius: 10px;
+}
+.container-product .block .card-body .card-text {
+  font-family: "Prata", serif;
+  font-size: 1.5rem;
+}
+.container-product-title {
+  font-family: "Prata", serif;
+}
+.container-about {
+  padding-top: 5rem;
+  width: 70%;
+  margin: 0 auto;
+}
+.container-about .text {
+  text-align: left;
+  margin-top: 10%;
+  margin-left: -4rem;
+}
+.container-about .text p {
+  font-size: 1.2rem;
+  width: 80%;
+}
+.container-about .text h1 {
+  font-family: "Prata", serif;
+}
+.container-mail {
+  margin-top: 5%;
+}
+
+.container-mail .image-container {
+  position: relative;
+  display: inline-block; /* Mengatur kontainer sesuai ukuran gambar */
+}
+.container-mail .image-container img {
+  border-radius: 20px;
+}
+.container-mail .image-girl {
+  display: block;
+  width: 100%; /* Atur sesuai keperluan */
+  height: auto;
+}
+
+.container-mail .overlay-content {
+  position: absolute;
+  top: 50%; /* Posisikan di tengah secara vertikal */
+  left: 50%; /* Posisikan di tengah secara horizontal */
+  transform: translate(-50%, -50%); /* Pusatkan dengan transformasi */
+  color: white; /* Atur warna teks */
+  text-align: center;
+}
+.container-mail .input-form {
+  border-radius: 50px 50px 0px 50px;
+  border: none;
+  padding: 0.4rem;
+  padding-left: 2rem;
+}
+.container-mail .input-form:focus {
+  outline: none;
+}
+.container-mail h2 {
+  font-family: "Prata", serif;
+  font-weight: 500;
+}
+.container-categories {
+  margin-top: 5%;
+}
+.container-categories .main {
+  background-color: #282828;
+  max-width: 40%;
+  color: white;
+  text-align: left;
+}
+.container-categories .detail {
+  background: rgb(219, 202, 170);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 202, 170, 1) 16%,
+    rgba(206, 187, 150, 1) 33%,
+    rgba(173, 156, 123, 1) 71%,
+    rgba(176, 158, 124, 1) 100%
+  );
+}
+.container-categories .main ul {
+  margin: 5% 0 5% 45%;
+  color: white;
+}
+.container-categories .main ul li {
+  list-style-type: none;
+  margin-top: 10%;
+}
+.container-categories .main ul li a {
+  text-decoration: none;
+  color: white;
+}
+.container-categories .main ul li a i {
+  font-size: 2rem;
+  font-weight: 600;
+  border: 2px solid white;
+  padding: 1rem;
+  min-width: 70px;
+  max-width: 70px;
+  text-align: center;
+  border-radius: 50%;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.container-categories .main ul li a span {
+  margin-left: 5%;
+}
+.container-categories .main ul li a i:hover {
+  background-color: #e0dbbe;
+  transform: rotate(-15deg);
+}
+.container-categories .detail .carousel {
+  display: flex;
+}
+.col.detail {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+/* Sesuaikan dengan kebutuhan */
+}
+
+.carousel {
+  width: 100%;
+  max-width: 800px; /* Sesuaikan dengan ukuran carousel yang diinginkan */
+}
+
+.container-categories .detail .carousel .container h3 {
+  margin-top: -1rem;
+}
