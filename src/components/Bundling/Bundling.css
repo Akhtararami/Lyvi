@@ -1,0 +1,9 @@
+.image-background-bundling {
+  content: "";
+  width: 100%;
+  left: 0;
+  margin-top: -5rem;
+  position: absolute;
+  pointer-events: none;
+  object-fit: cover;
+}

@@ -1,5 +1,6 @@
 import React from "react";
 import Background from "./../../assets/LandingPage/mail.png";
+import "./LandingPage.css"
 
 const Mail = () => {
   return (

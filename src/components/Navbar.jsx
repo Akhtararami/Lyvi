@@ -5,10 +5,10 @@ import "./Navbar.css";
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-transparent mt-3">
+    <nav className="navbar navbar-expand-lg bg-transparent">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img src={Logo} alt="" />
+          <img src={Logo} alt="Logo" />
         </a>
         <button
           className="navbar-toggler"
@@ -35,7 +35,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item me-5">
               <a className="nav-link" href="#">
-                Discount
+                Bundling
               </a>
             </li>
           </ul>

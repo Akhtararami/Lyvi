@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import logo from "./../../assets/LandingPage/produk.png";
+import "./LandingPage.css";
 
 const products = [
   {
@@ -10,38 +11,17 @@ const products = [
     image: logo,
   },
   {
-    id: 2,
+    id: 1,
     category: "Skincare",
-    price: "Rp.120.000,00",
-    name: "Glow Serum",
+    price: "Rp.100.000,00",
+    name: "Scarlet Whitening Facial Wash",
     image: logo,
   },
   {
-    id: 3,
+    id: 1,
     category: "Skincare",
-    price: "Rp.90.000,00",
-    name: "Aloe Vera Gel",
-    image: logo,
-  },
-  {
-    id: 4,
-    category: "Skincare",
-    price: "Rp.150.000,00",
-    name: "Vitamin C Serum",
-    image: logo,
-  },
-  {
-    id: 5,
-    category: "Skincare",
-    price: "Rp.110.000,00",
-    name: "Night Cream",
-    image: logo,
-  },
-  {
-    id: 6,
-    category: "Skincare",
-    price: "Rp.130.000,00",
-    name: "Day Cream",
+    price: "Rp.100.000,00",
+    name: "Scarlet Whitening",
     image: logo,
   },
 ];
@@ -103,14 +83,14 @@ const Product = () => {
       <div className="d-flex justify-content-center align-items-center">
         <button className="me-5" onClick={scrollLeft}>
           <i
-            class="fa-solid fa-chevron-left"
+            className="fa-solid fa-chevron-left"
             style={{
               color: "#B1A182",
             }}
           ></i>
         </button>
         <div
-          className="container-product d-flex"
+          className="container-product d-flex d-flex justify-content-center"
           style={{
             overflowX: "hidden",
             scrollBehavior: "smooth",
@@ -119,11 +99,11 @@ const Product = () => {
           }}
           ref={containerRef}
         >
-          {products.concat(products).map((product, index) => (
-            // Looping products with duplication for seamless scrolling
+          {products.map((product, index) => (
+            // Looping products without duplication
             <div
               key={index}
-              className="block m-2 border-none flex-shrink-0"
+              className="product-card m-2 border-none flex-shrink-0 "
               style={{ width: "18rem" }} // Each block width
             >
               <img
@@ -132,21 +112,23 @@ const Product = () => {
                 alt={product.name}
               />
               <div className="card-body mt-2">
-                <div
-                  className="card-title d-flex"
-                  style={{ justifyContent: "space-between" }}
-                >
-                  <h5>{product.category}</h5>
-                  <p>{product.price}</p>
-                </div>
-                <p className="card-text text-start mt-2">{product.name}</p>
+                <h5 className="text-muted fw-semibold">{product.category}</h5>
+                <p className="card-title">{product.name}</p>
+                <p className="card-text">{product.price}</p>
               </div>
+              <a className="detail-produk" href="">
+                <div className="card-footer">
+                  <div className="w-100 d-flex justify-content-center align-items-center">
+                    Lihat Produk
+                  </div>
+                </div>
+              </a>
             </div>
           ))}
         </div>
         <button className="ms-5" onClick={scrollRight}>
           <i
-            class="fa-solid fa-chevron-right"
+            className="fa-solid fa-chevron-right"
             style={{
               color: "#B1A182",
             }}

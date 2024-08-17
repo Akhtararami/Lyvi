@@ -1,5 +1,5 @@
 .container-footer {
-  margin-top: 5%;
+  margin-top: 16%;
 }
 footer {
   background-color: #f2f2f2;
@@ -7,6 +7,7 @@ footer {
   padding: 3% 15% 2% 15%;
   justify-content: space-between;
   box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  margin-top: auto;
 }
 footer .main {
   width: 20%;
@@ -27,4 +28,20 @@ footer .detail ul li a {
   text-decoration: none;
   color: black;
   font-weight: 300;
+}
+.detail {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .detail {
+    display: block;
+  }
+  .main p {
+    margin-left: -2rem;
+    width: 200%;
+    margin-top: 1rem;
+  }
+  .main img {
+    margin-left: -2rem;
+  }
 }

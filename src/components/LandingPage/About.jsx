@@ -1,5 +1,6 @@
 import React from "react";
 import about from "./../../assets/LandingPage/about.png";
+import "./LandingPage.css";
 
 const About = () => {
   return (

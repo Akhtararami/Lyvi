@@ -1,3 +1,4 @@
+/* <-------------------------------Home Start---------------------------> */
 .container-home {
   min-height: 100vh;
   background: rgb(200, 194, 160);
@@ -8,57 +9,133 @@
     rgba(254, 254, 253, 1) 68%,
     rgba(255, 255, 255, 1) 78%
   );
-  margin-top: -5rem;
+  margin-top: -3rem;
 }
 
 .detail-home {
   margin-top: 100rem;
 }
+
 .detail-home a {
   border: 1px solid rgb(180, 171, 124);
   text-decoration: none;
-  padding: 0.5rem 2rem 0.5rem 2rem;
+  padding: 0.5rem 2rem;
   color: rgb(180, 171, 124);
   background-color: white;
   border-radius: 50rem;
+  margin-left: -12rem;
+}
+.detail-home a:hover {
+  border: 1px solid white;
+  background: linear-gradient(
+    90deg,
+    rgba(219, 202, 170, 1) 16%,
+    rgba(206, 187, 150, 1) 33%,
+    rgba(173, 156, 123, 1) 71%,
+    rgba(176, 158, 124, 1) 100%
+  );
+  color: white;
 }
 .detail-home h1 {
   font-family: "Prata", serif;
   font-size: 5rem;
   text-align: left;
+  margin-left: 10rem;
 }
+
 .detail-home .logo-home {
   margin-left: 40rem;
 }
+
 .image-girl img {
-  width: 80%;
+  width: 90%;
+  margin-right: 2rem;
 }
+
 .image-girl {
   align-items: end;
   display: flex;
   height: 100vh;
 }
+
 .teks-left {
   margin-left: 20rem;
   z-index: 2000;
 }
 
-.container-product .block img {
-  border-radius: 5px 5px 0 0;
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 768px) {
+  .container-home {
+    margin-top: 10;
+  }
+
+  .detail-home {
+    margin-top: 10rem;
+    flex-direction: column;
+    align-items: center; /* Center align items horizontally */
+  }
+
+  .detail-home h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 10rem;
+    left: 50%;
+  }
+
+  .detail-home .logo-home {
+    margin-left: 0;
+    display: block;
+    margin: 50px auto;
+    width: 50%;
+  }
+
+  .detail-home a {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    width: 30%;
+    margin: 0 auto;
+  }
+
+  .image-girl img {
+    width: 100%;
+  }
+
+  .image-girl {
+    height: auto;
+  }
+
+  .teks-left {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  /* Ensure text is displayed above the image */
+  .teks-left {
+    order: 1; /* Ensure this element appears above */
+  }
+
+  .image-girl {
+    order: 2; /* Ensure this element appears below */
+  }
 }
-.container-product .block {
-  background-color: #e0dbbe;
-  border: 10px solid #e0dbbe;
-  min-height: 25rem;
-  border-radius: 10px;
+@media only screen and (max-width: 1366px) {
+.detail-home h1 {
+  margin-left: -10rem;
 }
-.container-product .block .card-body .card-text {
-  font-family: "Prata", serif;
-  font-size: 1.5rem;
+.detail-home .logo-home{
+  align-items: left;
+  width: 50%;
+  margin-left: 10rem;
 }
-.container-product-title {
-  font-family: "Prata", serif;
 }
+
+/* <--------------------------------Home End---------------------------> */
+
+/* <---------------------------Product Start---------------------------> */
+
+/* <---------------------------Product End---------------------------> */
+
+/* <---------------------------About Start---------------------------> */
 .container-about {
   padding-top: 5rem;
   width: 70%;
@@ -76,6 +153,45 @@
 .container-about .text h1 {
   font-family: "Prata", serif;
 }
+@media only screen and (max-width: 768px) {
+  .container-about img {
+    width: 20rem;
+  }
+  .container-about .text {
+    text-align: center;
+    margin-left: 0;
+    display: inline;
+  }
+  .container-about p {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .container-about {
+    width: 90%;
+  }
+  .container-about hr {
+    margin: 0 auto;
+  }
+  .container-about {
+    display: block;
+  }
+  .row {
+    flex-direction: column; /* Ubah arah tata letak menjadi kolom */
+  }
+
+  .col {
+    width: 100%; /* Pastikan kolom mengisi lebar penuh */
+    margin-bottom: 20px; /* Jarak antara kolom di layar kecil */
+  }
+}
+@media only screen and (max-width: 1600px){
+  .container-about .text{
+    margin-left: 0rem;
+  }
+}
+/* <---------------------------About End---------------------------> */
+
+/* <---------------------------Mail Start---------------------------> */
 .container-mail {
   margin-top: 5%;
 }
@@ -114,15 +230,30 @@
   font-family: "Prata", serif;
   font-weight: 500;
 }
+@media only screen and (max-width: 768px) {
+  .container-mail .image-container img {
+    width: 90%;
+    margin: 0 auto;
+    height: 20rem;
+  }
+}
+/* <--------------------------Mmail End---------------------------> */
+/* <---------------------------Categories Start---------------------------> */
+
 .container-categories {
   margin-top: 5%;
 }
+
 .container-categories .main {
   background-color: #282828;
-  max-width: 40%;
   color: white;
   text-align: left;
 }
+
+.container-categories .main h3 {
+  margin-bottom: 2rem;
+}
+
 .container-categories .detail {
   background: rgb(219, 202, 170);
   background: linear-gradient(
@@ -133,18 +264,26 @@
     rgba(176, 158, 124, 1) 100%
   );
 }
+
 .container-categories .main ul {
-  margin: 5% 0 5% 45%;
-  color: white;
+  padding-left: 0;
+  width: 100%;
 }
+
 .container-categories .main ul li {
   list-style-type: none;
-  margin-top: 10%;
+  display: flex;
+  justify-content: start;
+  margin-left: 30rem;
 }
+
 .container-categories .main ul li a {
   text-decoration: none;
   color: white;
+  display: flex;
+  align-items: center;
 }
+
 .container-categories .main ul li a i {
   font-size: 2rem;
   font-weight: 600;
@@ -156,29 +295,79 @@
   border-radius: 50%;
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
+
 .container-categories .main ul li a span {
   margin-left: 5%;
 }
+
 .container-categories .main ul li a i:hover {
   background-color: #e0dbbe;
   transform: rotate(-15deg);
 }
+
 .container-categories .detail .carousel {
-  display: flex;
+  margin: auto;
 }
+
 .col.detail {
   display: flex;
   align-items: center;
-  width: 100%;
   justify-content: center;
-/* Sesuaikan dengan kebutuhan */
 }
 
 .carousel {
   width: 100%;
-  max-width: 800px; /* Sesuaikan dengan ukuran carousel yang diinginkan */
+  padding-bottom: 3rem;
 }
 
 .container-categories .detail .carousel .container h3 {
   margin-top: -1rem;
 }
+.container-categories .detail a {
+  background-color: #282828;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+  color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 14rem;
+}
+.container-categories .detail a:hover {
+  background-color: white;
+  color: #282828;
+  border: 1px solid #282828;
+}
+@media (max-width: 768px) {
+  .container-categories {
+    margin-top: 5rem;
+  }
+
+  .container-categories .main,
+  .container-categories .detail {
+    text-align: center;
+    max-width: 100%;
+  }
+
+  .container-categories .main ul {
+    margin-top: 2rem;
+  }
+
+  .container-categories .main ul li a {
+    justify-content: center;
+    font-size: 0px;
+    margin-left: 2rem;
+  }
+  .container-categories .main ul li {
+    margin-left: 0;
+  }
+  .container-categories .detail .carousel .container h3 {
+    margin-top: 0;
+  }
+  .container-categories .detail {
+    padding-top: 5rem;
+  }
+}
+
+/* <---------------------------Categories End ---------------------------> */

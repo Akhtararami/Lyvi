@@ -1,6 +1,7 @@
 import React from "react";
 import "./Footer.css";
 import logo from "./../../assets/LandingPage/logomerge.png";
+import "./LandingPage.css"
 
 const Footer = () => {
   return (
@@ -14,7 +15,7 @@ const Footer = () => {
               porro, consequatur optio rerum quo et!
             </p>
           </div>
-          <div className="detail d-flex">
+          <div className="detail">
             <ul className="me-5">
               <h5>Home</h5>
               <li>

@@ -10,18 +10,19 @@ const Home = () => {
         className="row detail-home d-flex align-items-center justify-content-center"
         style={{ minHeight: "100vh" }}
       >
-        <div className="col teks-left text-center">
+        <div className="col teks-left text-left">
           <div className="text mb-3">
             <h1>
               Timeless Beauty, <br />
               Timeless You
             </h1>
           </div>
-          <div className="text ">
+          <div className="text">
             <a href="#">
-              View Product<i class="fa-solid fa-arrow-right ms-3"></i>
+            <em>View Product</em>
+              <i className="fa-solid fa-arrow-right ms-3"></i>
             </a>
-            <img src={logo} alt="" className="logo-home ms-5" />
+            <img src={logo} alt="" className="logo-home" />
           </div>
         </div>
         <div className="col image-girl">

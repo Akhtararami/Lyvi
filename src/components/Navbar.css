@@ -2,26 +2,46 @@ nav {
   background: transparent;
   width: 70%;
   margin: 0 auto;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 40000;
 }
+
+.navbar-nav {
+  display: flex;
+  justify-content: center; /* Menyusun item di tengah secara horizontal */
+  flex-grow: 1; /* Mengisi ruang yang tersedia */
+  width: 100%; /* Memastikan navbar-nav mengambil lebar penuh dari kontainer */
+}
+
+.nav-item {
+  margin: 0 15px; /* Jarak antar item navigasi */
+}
+
 .nav-item a {
-  font-weight: 600;
+  font-weight: 400;
 }
+
 .form {
   border: none;
   border-bottom: 1px solid black;
   background: transparent;
 }
+
 .form:focus {
   border: none;
   border-bottom: 1px solid rgb(211, 224, 28);
   outline: none;
 }
+
 button {
   background: none;
   border: none;
   box-shadow: none;
   width: 10px;
 }
+
 button:hover {
   background: none;
   border: none;
